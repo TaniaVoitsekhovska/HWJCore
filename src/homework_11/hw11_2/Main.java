@@ -27,7 +27,7 @@ public class Main {
             throw new IllegalArgumentException("Max number is smaller than min number !");
         }
         Random random = new Random();
-        return random.nextInt((max - min + 1) + min);
+        return random.nextInt(max - min + 1) + min;
     }
 
     static String material() {
