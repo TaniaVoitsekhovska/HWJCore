@@ -1,1 +1,1 @@
-# HWJCore
+# Homework JavaCore
