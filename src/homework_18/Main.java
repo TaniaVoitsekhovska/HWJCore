@@ -44,7 +44,6 @@ public class Main {
         arrayList.add(new Integer(11));
         arrayList.add(new Integer(0));
         addToList(arrayList);
-        System.out.println();
         System.out.println( arrayList.toString());
 
 
