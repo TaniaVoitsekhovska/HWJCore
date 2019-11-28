@@ -9,14 +9,14 @@ public class Main {
 
     public static void main(String[] args) {
 
-        MyMap<java.lang.Integer,List<java.lang.Integer>> map=
-                new MyMap<>(25,new ArrayList<java.lang.Integer>( Arrays.asList(new java.lang.Integer(55))));
+        MyMap<Integer,List<Integer>> map=
+                new MyMap<>(25,new ArrayList<Integer>( Arrays.asList(new Integer(55))));
 
-        map.addNewObject(21,Arrays.asList(new java.lang.Integer(33)));
-        map.addNewObject(1,Arrays.asList(new java.lang.Integer(11)));
-        map.addNewObject(7,Arrays.asList(new java.lang.Integer(4)));
-        map.addNewObject(27,Arrays.asList(new java.lang.Integer(32)));
-        map.addNewObject(14,Arrays.asList(new java.lang.Integer(2)));
+        map.addNewObject(21,Arrays.asList(new Integer(33)));
+        map.addNewObject(1,Arrays.asList(new Integer(11)));
+        map.addNewObject(7,Arrays.asList(new Integer(4)));
+        map.addNewObject(27,Arrays.asList(new Integer(32)));
+        map.addNewObject(14,Arrays.asList(new Integer(2)));
 
         map.showMap();
         map.showKeys();
@@ -30,24 +30,28 @@ public class Main {
         System.out.println();
 
         System.out.println("After removing by value:");
-        map.removeByValue(Arrays.asList(new java.lang.Integer(55)));
+        map.removeByValue(Arrays.asList(new Integer(55)));
         System.out.println();
         map.showMap();
 
 
 
-        //String can be put into List<Integer> if create new class Integer
+
 
         List<Integer> arrayList=new ArrayList<Integer>();
-        arrayList.add(new Integer("hello,"));
-        arrayList.add(new Integer("it's"));
-        arrayList.add(new Integer("not"));
-        arrayList.add(new Integer("funny!"));
+        arrayList.add(new Integer(5));
+        arrayList.add(new Integer(6));
+        arrayList.add(new Integer(11));
+        arrayList.add(new Integer(0));
+        addToList(arrayList);
         System.out.println();
-        System.out.println("My List))");
         System.out.println( arrayList.toString());
 
 
+    }
+
+    public static void addToList(List list){
+        list.add("Hello, I am String!");
     }
 
 
