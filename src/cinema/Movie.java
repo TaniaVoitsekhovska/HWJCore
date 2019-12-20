@@ -9,6 +9,7 @@ public class Movie {
     public Movie(String title, Time duration) {
         this.title = title;
         this.duration = duration;
+        MoviesLibrary.addMovieToLibrary(this);
     }
 
     public String getTitle() {
@@ -25,6 +26,13 @@ public class Movie {
 
     public void setDuration(Time duration) {
         this.duration = duration;
+    }
+
+    public  int addBreak(){
+        if(duration.getMin()>=30){
+            return 60-duration.getMin();
+        }else
+            return 30-duration.getMin();
     }
 
     @Override

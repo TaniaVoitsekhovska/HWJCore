@@ -43,6 +43,12 @@ public class Time {
             hour += count;
             min = min - (count * 60);
         }
+        if(min>=30){
+            min=59;
+        }else {
+            min=29;
+        }
+
         return new Time(hour, min);
     }
 
